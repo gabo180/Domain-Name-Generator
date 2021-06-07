@@ -8,16 +8,16 @@ import "./assets/img/4geeks.ico";
 window.onload = function() {
   let pronoun = ["the", "our", "your"];
   let adj = ["great", "big", "worst"];
-  let noun = ["jogger", "racoon", "food"];
-  let ext = [".com", ".net", ".io"];
+  let noun = ["jogger", "racoon", "food", "thing"];
+  let ext = [".com", ".net", ".io", ".us"];
 
   for (let p = 0; p < pronoun.length; p++) {
     // console.log(pronoun[p]);
-    for (let a = 0; a < pronoun.length; a++) {
+    for (let a = 0; a < adj.length; a++) {
       //   console.log(adj[a]);
-      for (let n = 0; n < pronoun.length; n++) {
+      for (let n = 0; n < noun.length; n++) {
         // console.log(noun[n]);
-        for (let e = 0; e < pronoun.length; e++) {
+        for (let e = 0; e < ext.length; e++) {
           console.log(`${pronoun[p]}${adj[a]}${noun[n]}${ext[e]}`);
         }
       }
